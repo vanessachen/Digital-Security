@@ -5,7 +5,9 @@ var sqlite3 = require('sqlite3').verbose();
 var exec = require('child_process').exec;
 
 // Connect to the database
-var db = new sqlite3.Database('./sql_inj_test.sqlite');
+//var db = new sqlite3.Database('./sql_inj_test.sqlite');
+var db = new sqlite3.Database('./testdatabase.db');
+
 
 function handlePostData(req, res, callback) {
     var body = '';
